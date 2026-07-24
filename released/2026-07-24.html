@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slow Wave &middot; Issue No. 16 &middot; 24 July 2026</title>
+  <meta name="description" content="Today&#39;s sleep science, with a heading. A daily sleep-medicine and sleep-science digest for clinicians and researchers.">
+  <meta name="theme-color" content="#0c0c0c">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="mask-icon" href="../favicon.svg" color="#e6452f">
+  <link rel="stylesheet" href="../fonts/fonts.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #fbfaf6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+    body {
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #1a1a17;
+    }
+
+    /* ── shell ─────────────────────────────────────────────── */
+    .av-shell {
+      font-family: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #1a1a17;
+      background: #ffffff;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 72px 88px 80px;
+      letter-spacing: -0.003em;
+      font-feature-settings: "kern", "liga", "calt";
+      box-shadow: 0 1px 3px rgba(12,12,12,0.04), 0 12px 60px rgba(12,12,12,0.06);
+    }
+
+    /* ── duplicate-risk gate (staging preview only) ─────────── */
+    .av-dup-gate {
+      border: 2px solid #b00020;
+      border-left-width: 8px;
+      background: #fff5f5;
+      border-radius: 6px;
+      padding: 18px 22px;
+      margin-bottom: 32px;
+      color: #5c0010;
+      font-family: "Inter Tight", system-ui, sans-serif;
+    }
+    .av-dup-gate-head {
+      font-weight: 800;
+      font-size: 16px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: #b00020;
+    }
+    .av-dup-gate-body, .av-dup-gate-remedy {
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 0 8px;
+    }
+    .av-dup-gate-cmds {
+      margin: 0;
+      padding: 12px 14px;
+      background: #2b0008;
+      color: #ffd9dd;
+      border-radius: 4px;
+      font-family: "SFMono-Regular", ui-monospace, Menlo, monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      overflow-x: auto;
+    }
+
+    /* ── masthead ──────────────────────────────────────────── */
+    .av-masthead {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #0c0c0c;
+      margin-bottom: 36px;
+    }
+    .av-brand {
+      font-family: "Big Shoulders Display", "Inter Tight", sans-serif;
+      font-size: 60px;
+      font-weight: 800;
+      letter-spacing: -0.005em;
+      line-height: 0.85;
+      color: #0c0c0c;
+      text-transform: uppercase;
+    }
+    .av-brand-slash { color: #e6452f; margin: 0 2px; }
+    .av-mast-meta {
+      font-family: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #5a5a55;
+      text-align: right;
+      line-height: 1.7;
+    }
+    .av-mast-archive {
+      display: inline-block;
+      margin-top: 4px;
+      color: #e6452f;
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(230,69,47,0.35);
+    }
+    .av-mast-archive:hover { border-bottom-color: #e6452f; }
+
+    /* ── tagline ───────────────────────────────────────────── */
+    .av-tagline {
+      font-family: "DM Serif Display", "Source Serif 4", Georgia, serif;
+      font-style: italic;
+      font-size: 22px;
+      color: #1a1a17;
+      margin: 0 0 32px;
+      letter-spacing: -0.01em;
+      line-height: 1.3;
+    }
+    .av-tagline-mark { color: #e6452f; margin-right: 12px; }
+
+    /* ── pulse ─────────────────────────────────────────────── */
+    .av-pulse {
+      margin: 0 0 56px;
+      padding: 32px 32px 28px;
+      background: #fdf4f1;
+      border-left: 3px solid #e6452f;
+    }
+    .av-pulse-label {
+      font-family: "Inter Tight", sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #e6452f;
+      margin: 0 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .av-pulse-bar { width: 32px; height: 2px; background: #e6452f; }
+    .av-pulse-title {
+      font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: -0.028em;
+      line-height: 1.15;
+      margin: 0 0 22px;
+      color: #0c0c0c;
+      text-wrap: balance;
+      max-width: 26ch;
+    }
+    .av-pulse-body {
+      font-size: 18px;
+      line-height: 1.65;
+      color: #2a2a26;
+      margin: 0 0 18px;
+      max-width: 38em;
+      text-wrap: pretty;
+    }
+    .av-pulse-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      color: #6a6a64;
+      flex-wrap: wrap;
+    }
+    .av-pulse-link {
+      color: #e6452f;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      font-weight: 600;
+    }
+
+    /* ── section ───────────────────────────────────────────── */
+    .av-section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 32px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #0c0c0c;
+      margin: 0 0 28px;
+    }
+    .av-section-title-wrap {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+    }
+    .av-section-title {
+      font-family: "Inter Tight", sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      margin: 0;
+      color: #0c0c0c;
+    }
+    .av-section-count {
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      color: #6a6a64;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* ── stories ───────────────────────────────────────────── */
+    .av-story { margin: 0 0 36px; }
+    .av-story-title {
+      font-family: "Inter Tight", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin: 0 0 10px;
+      color: #0c0c0c;
+      text-wrap: balance;
+      max-width: 28em;
+    }
+    .av-story-body {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #2a2a26;
+      margin: 0 0 14px;
+      max-width: 38em;
+      text-wrap: pretty;
+    }
+    .av-story-foot {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 13px;
+      color: #6a6a64;
+      flex-wrap: wrap;
+    }
+    .av-story-src {
+      color: #e6452f;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    /* ── pills ─────────────────────────────────────────────── */
+    .av-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-family: "Inter Tight", sans-serif;
+      font-size: 9px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      line-height: 1.3;
+    }
+    .av-pill-act     { color: #8a5448; background: #f5ecea; }
+    .av-pill-try     { color: #4f7a5d; background: #ecf2ed; }
+    .av-pill-read    { color: #5a7090; background: #eef1f6; }
+    .av-pill-watch   { color: #6a6a64; background: #f0efec; }
+    .av-pill-discuss { color: #8a7548; background: #f4eee2; }
+
+    /* ── section intro paragraph ───────────────────────────── */
+    .av-section-intro {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #3a3a36;
+      margin: 0 0 36px;
+      max-width: 40em;
+      text-wrap: pretty;
+    }
+    .av-section-intro-strong {
+      color: #0c0c0c;
+      font-weight: 700;
+    }
+
+    /* ── Currents (terse) ─────────────────────────────────── */
+    .av-section.currents .av-story { margin: 0 0 22px; }
+    .av-section.currents .av-story-body { font-size: 16px; }
+    /* legacy alias for archived issues still carrying on_the_radar class */
+    .av-section.on_the_radar .av-story { margin: 0 0 22px; }
+    .av-section.on_the_radar .av-story-body { font-size: 16px; }
+
+    /* ── footer ────────────────────────────────────────────── */
+    .av-footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #0c0c0c;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6a6a64;
+    }
+    .av-footer-build {
+      color: #a5a5a0;
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+    }
+    .av-about {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #8a8a85;
+      line-height: 1.6;
+      max-width: 60em;
+    }
+    .av-archive-link {
+      color: #6a6a64;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    /* ── responsive ────────────────────────────────────────── */
+    @media (max-width: 720px) {
+      .av-shell { padding: 36px 24px 48px; }
+      .av-brand { font-size: 42px; }
+      .av-mast-meta { font-size: 10px; letter-spacing: 0.1em; }
+      .av-tagline { font-size: 19px; }
+      .av-pulse { padding: 24px 22px 22px; }
+      .av-pulse-title { font-size: 26px; }
+      .av-pulse-body { font-size: 17px; }
+      .av-section-title { font-size: 22px; }
+      .av-story-title { font-size: 20px; }
+      .av-masthead { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .av-mast-meta { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <article class="av-shell">
+    
+    <header class="av-masthead">
+      <h1 class="av-brand">Slow<span class="av-brand-slash">/</span>Wave</h1>
+      <div class="av-mast-meta">
+        <div>Friday, 24 July 2026</div>
+        <div>Issue No. 16 &middot; ~2 min read</div>
+        <div><a class="av-mast-archive" href="../index.html">All Issues &rarr;</a></div>
+      </div>
+    </header>
+
+    <p class="av-tagline">
+      <span class="av-tagline-mark">&mdash;</span>
+      Today&#39;s sleep science, with a heading.
+    </p>
+
+    
+    
+    <section class="av-pulse">
+      <div class="av-pulse-label">
+        <span class="av-pulse-bar"></span>
+        <span>The Pulse &middot; Story of the day</span>
+      </div>
+      <h2 class="av-pulse-title">Polysomnographic traits distinguish CSA from OSA in heart failure patients</h2>
+      <p class="av-pulse-body">In a trial of HF patients with reduced LVEF and AHI &gt;15, loop gain and arousal threshold helped discriminate between central (CSA) and obstructive sleep apnea (OSA). Logistic regression showed higher loop gain in CSA. Cross-sectional data; useful for refining diagnostic protocols for HF-related sleep disorders.</p>
+      <div class="av-pulse-meta">
+        
+          <a class="av-pulse-link" href="https://academic.oup.com/sleep/advance-article/doi/10.1093/sleep/zsag202/8740642?rss=1">academic.oup.com&nbsp;&rarr;</a>
+        
+      </div>
+    </section>
+
+    
+    
+      
+        <div class="av-section big_picture">
+          <div class="av-section-head">
+            <div class="av-section-title-wrap">
+              <h2 class="av-section-title">The Big Picture</h2>
+            </div>
+            <span class="av-section-count">4 stories</span>
+          </div>
+          
+            <p class="av-section-intro"><span class="av-section-intro-strong">Shifts to consider.</span> Regulatory changes and technological advancements highlight evolving standards in sleep care, influencing vendor contracts and clinical protocols.
+            </p>
+          
+          
+            <article class="av-story">
+              <h3 class="av-story-title">CMS strengthens DMEPOS supplier oversight from Jan. 2026</h3>
+              <p class="av-story-body">The Centers for Medicare &amp; Medicaid Services tightened accreditation standards for DMEPOS suppliers effective Jan. 1, 2026, aiming to enhance compliance with Medicare rules. Useful when reviewing vendor contracts and ensuring patient care pathways comply with updated regulations.</p>
+              <div class="av-story-foot">
+                
+                  <span class="av-pill av-pill-act">act</span>
+                
+                
+                  <a class="av-story-src" href="https://aasm.org/important-changes-to-dmepos-supplier-enrollment-and-accreditation/">aasm.org&nbsp;&rarr;</a>
+                
+              </div>
+            </article>
+          
+            <article class="av-story">
+              <h3 class="av-story-title">Consumer tech deepens sleep care integration in Q2 2026</h3>
+              <p class="av-story-body">Large tech firms are expanding beyond standalone devices to integrate with clinical pathways, enhancing patient monitoring and intervention. AASM&#39;s State of Sleep report highlights this shift. Useful when updating protocols for digital therapeutics and consumer device referrals.</p>
+              <div class="av-story-foot">
+                
+                  <span class="av-pill av-pill-discuss">discuss</span>
+                
+                
+                  <a class="av-story-src" href="https://aasm.org/key-trends-in-sleep-medicine-q2-2026/">aasm.org&nbsp;&rarr;</a>
+                
+              </div>
+            </article>
+          
+            <article class="av-story">
+              <h3 class="av-story-title">Diagnosis and treatment of OSA have significant environmental impact</h3>
+              <p class="av-story-body">A systematic review in Sleep Medicine Reviews reveals that diagnosing and treating obstructive sleep apnoea (OSA) has notable environmental effects, largely due to equipment use. Useful for clinic leads prioritising sustainable practices when managing OSA.</p>
+              <div class="av-story-foot">
+                
+                  <span class="av-pill av-pill-discuss">discuss</span>
+                
+                
+                  <a class="av-story-src" href="https://www.sciencedirect.com/science/article/pii/S1087079226000778?dgcid=rss_sd_all">sciencedirect.com&nbsp;&rarr;</a>
+                
+              </div>
+            </article>
+          
+            <article class="av-story">
+              <h3 class="av-story-title">Modafinil effective for daytime sleepiness in a meta-analysis of trials</h3>
+              <p class="av-story-body">A systematic review and meta-analysis of 28 randomised controlled trials found modafinil significantly reduced excessive daytime sleepiness. Useful when refining treatment protocols for patients with narcolepsy or obstructive sleep apnoea.</p>
+              <div class="av-story-foot">
+                
+                  <span class="av-pill av-pill-read">read</span>
+                
+                
+                  <a class="av-story-src" href="https://www.sciencedirect.com/science/article/pii/S1389945726003552?dgcid=rss_sd_all">sciencedirect.com&nbsp;&rarr;</a>
+                
+              </div>
+            </article>
+          
+        </div>
+      
+    
+      
+        <div class="av-section hands_on">
+          <div class="av-section-head">
+            <div class="av-section-title-wrap">
+              <h2 class="av-section-title">Hands-On</h2>
+            </div>
+            <span class="av-section-count">1 stories</span>
+          </div>
+          
+            <p class="av-section-intro"><span class="av-section-intro-strong">Explore beyond binaries.</span> Today’s developments highlight multidimensional approaches in sleep research, offering richer insights for clinical practice and patient treatment.
+            </p>
+          
+          
+            <article class="av-story">
+              <h3 class="av-story-title">Daytime sleep phenotyping moves beyond binary napping</h3>
+              <p class="av-story-body">Researchers introduce multidimensional methods to phenotype daytime sleep, moving from simple &#39;yes or no&#39; napping definitions. Cross-sectional data; useful for refining patient stratification and treatment protocols in clinical practice.</p>
+              <div class="av-story-foot">
+                
+                  <span class="av-pill av-pill-discuss">discuss</span>
+                
+                
+                  <a class="av-story-src" href="https://www.sciencedirect.com/science/article/pii/S2352721826001245?dgcid=rss_sd_all">sciencedirect.com&nbsp;&rarr;</a>
+                
+              </div>
+            </article>
+          
+        </div>
+      
+    
+      
+        <div class="av-section currents">
+          <div class="av-section-head">
+            <div class="av-section-title-wrap">
+              <h2 class="av-section-title">Currents</h2>
+            </div>
+            <span class="av-section-count">1 items</span>
+          </div>
+          
+            <p class="av-section-intro"><span class="av-section-intro-strong">Muscle strength and weight link to insomnia.</span> These early signals suggest a need for clinicians to consider physical fitness alongside traditional sleep assessments.
+            </p>
+          
+          
+            <article class="av-story">
+              <h3 class="av-story-title">Low muscle strength and being underweight raise insomnia risk in older adults</h3>
+              <p class="av-story-body">A cross-sectional study of 5824 older adults found that low muscle strength increased the odds of insomnia by 1.22 (95% CI: 1.02–1.46), after adjusting for depressive symptoms. Cross-sectional data; useful when refining patient assessment protocols to include muscle strength and body weight in late-life insomnia evaluations.</p>
+              <div class="av-story-foot">
+                
+                  <span class="av-pill av-pill-read">read</span>
+                
+                
+                  <a class="av-story-src" href="https://academic.oup.com/sleep/advance-article/doi/10.1093/sleep/zsag196/8740649?rss=1">academic.oup.com&nbsp;&rarr;</a>
+                
+              </div>
+            </article>
+          
+        </div>
+      
+    
+
+    <footer class="av-footer">
+      <span>Slow Wave &middot; Woolcock Sleep Research &middot; 24 July 2026 &middot; <a class="av-archive-link" href="../index.html">all issues &rarr;</a></span>
+      <span class="av-footer-build">Compiled 2026-07-24 16:30 AEST</span>
+    </footer>
+    <p class="av-about">
+      A daily AI newsletter with a financial-services lens. Curated, not aggregated. AI-drafted, human-ratified.
+    </p>
+  </article>
+</body>
+</html>
